@@ -1,0 +1,164 @@
+    * {
+        font-family: roboto, helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    #container {
+        background-color: lightgrey;
+        max-width: 680px;
+        height: 100vh;
+        margin: auto;
+        padding: 15px;
+    }
+
+    #gameboard {
+        display: block;
+        float: left;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+        color: white;
+        margin-top: 0rem;
+        margin-bottom: 0.2rem;
+    }
+
+    #header {
+        font-size: 1.5rem;
+        color: white;
+        background-color: #a0a0a0;
+        border-radius: 15px;
+        padding: 35px;
+        margin-bottom: 0.5rem;
+    }
+
+    #header .flexBox {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+
+    #neustart, #timer, #gameMoves {
+        cursor: pointer;
+    }
+
+    .bild {
+        width: 150px;
+        height: 150px;
+        /*Um Karten sichtbar zu machen = 6rem*/
+        font-size: 0;
+        background-color: grey;
+        text-align: center;
+        border-radius: 20px;
+        margin: 10px;
+        display: block;
+        float: left;
+        cursor: pointer;
+    }
+
+    .markiert {
+        font-size: 6rem;
+        background-color: yellow;
+    }
+
+    /*--------------Das Modal Fenster-----------*/
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 15px;
+        border: 1px solid #888;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        /* height: 500px; */
+        border-radius: 15px;
+        font-size: 1.5rem;
+        color: #404040;
+    }
+
+    .h2 {
+        font-size: 3rem;
+    }
+
+    .modal-content p {
+        margin: 0 1rem 1rem 0;
+    }
+
+    #winningMoves {
+        margin-bottom: 1rem;
+    }
+
+    #btnNewGame {
+        cursor: pointer;
+        padding: 5px 20px;
+        background-color: #5fb843;
+        margin: auto;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .close:hover, .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .horizontalFloat {
+        flex-direction: row;
+    }
+
+    #eingabeModal {
+        font-size: 1.2rem;
+        height: 1.2rem;
+        max-width: 220px;
+    }
+
+    #btnModal {
+        font-size: 1rem;
+        height: 1.5rem;
+        max-width: 5rem;
+    }
+
+    /*-------------- Game Scores -----------*/
+
+    #gameScores {
+        color: grey;
+        float: left;
+    }
+
+    /*--------- Mobile --------------------*/
+
+    @media only screen and (max-width: 450px) {
+        #header .flexBox {
+            flex-direction: column;
+            align-content: flex-start;
+        }
+    }

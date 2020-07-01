@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="style_memory.css">
+    <script src="main_memory.js" defer></script> 
+    
+<body>
+    <main>
+    <!-- Modal Inhalt -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>🎉 ✨  Gewonnen  🎉 ✨ </h2>
+            <div id="winningMoves"> leer </div>
+            <ul id="gameScores">
+            </ul>
+            <p id="btnNewGame">Neues Spiel?</p>
+        </div>
+    </div>
+        <div id="container">
+            <div id="header">
+                <h1>Memory</h1>
+            <div class="flexBox"> 
+                <div id ="neustart">Neustart</div>
+                <div id="timer">Spieldauer: 0:00</div>
+                <div id="gameMoves">Moves: 0</div>
+            </div>
+            </div>
+
+            <div id="gameboard">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
